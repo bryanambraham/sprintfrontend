@@ -80,7 +80,7 @@ export function SiteFooter() {
               <li className="text-sm text-gray-600">Kalimantan</li>
               <li className="text-sm text-gray-600">Sumatera</li>
               <li className="text-sm text-gray-600">Sulawesi</li>
-              <li className="text-sm text-gray-600">Nusa Tenggara</li>
+              <li className="text-sm text-gray-600">Nusa Tenggara (Barat & Timur)</li>
               <li className="text-sm text-gray-600">Maluku & Papua</li>
             </ul>
           </div>
