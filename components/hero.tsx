@@ -75,7 +75,7 @@ export function HeroSection({
             {button && (
               <Link
                 href={button.href}
-                className="inline-block bg-[#1B1464] text-white px-8 py-3 rounded-md font-semibold hover:bg-[#251b8c] transition-colors"
+                className="inline-block bg-green-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-[#251b8c] transition-colors"
               >
                 {button.text}
               </Link>

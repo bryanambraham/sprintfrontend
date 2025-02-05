@@ -1,7 +1,7 @@
 import { HeroSection } from '@/components/hero'
 import React from 'react'
 import { DescriptionContent } from "@/components/content-desc"
-import { list } from 'postcss'
+import { WhyChooseHero } from '@/components/hero2'
 
 const page = () => {
 
@@ -197,7 +197,7 @@ const page = () => {
   ]
 
   return (
-    <div>
+    <div className='min-h-screen bg-white'>
       <HeroSection
         title="Jasa Ekspedisi Murah Jakarta Ke Berbagai Wilayah Indonesia"
         description="Jasa ekspedisi murah di Jakarta untuk pengiriman cargo ke berbagai wilayah Indonesia."
@@ -216,9 +216,15 @@ const page = () => {
         imageAlt="Hero PIC"
       />
 
-      <div className="container mx-auto px-4 py-8">
-      <DescriptionContent items={descriptionItems} />
-      </div>
+      <section className="py-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <DescriptionContent items={descriptionItems} className="prose prose-lg max-w-none" />
+        </div>
+      </section>
+
+      <WhyChooseHero />
+
+
     </div>
   )
 }

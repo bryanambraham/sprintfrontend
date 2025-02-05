@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero"
+import { Check } from "lucide-react"
 
 export default function Home() {
   return (
