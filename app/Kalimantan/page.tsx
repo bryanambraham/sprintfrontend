@@ -2,6 +2,7 @@ import { HeroSection } from '@/components/hero'
 import React from 'react'
 import { DescriptionContent } from "@/components/content-desc"
 import { WhyChooseHero } from '@/components/hero2'
+import { ShippingCalculator } from '@/components/ship-search'
 
 const page = () => {
 
@@ -205,6 +206,12 @@ const page = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <DescriptionContent items={descriptionItems} className="prose prose-lg max-w-none" />
         </div>
+      </section>
+      
+      <section className='py-6'>
+      <div className="min-h-screen bg-gray-50 py-12">
+        <ShippingCalculator />
+      </div>
       </section>
 
       <WhyChooseHero />
