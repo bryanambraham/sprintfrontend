@@ -2,7 +2,7 @@ import { HeroSection } from '@/components/hero'
 import React from 'react'
 import { DescriptionContent } from "@/components/content-desc"
 import { WhyChooseHero } from '@/components/hero2'
-import { ShippingCalculator } from '@/components/ship-search'
+import CargoSearch from '@/components/ship-search'
 
 const page = () => {
 
@@ -210,7 +210,7 @@ const page = () => {
       
       <section className='py-6'>
       <div className="min-h-screen bg-gray-50 py-12">
-        <ShippingCalculator />
+        <CargoSearch />
       </div>
       </section>
 
