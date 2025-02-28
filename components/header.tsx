@@ -145,9 +145,9 @@ export function SiteHeader() {
               <Link href="/Promo" className="text-gray-700 hover:text-[#FF6600]">
                 Promo
               </Link>
-              <button className="p-2 hover:text-[#FF6600]">
+              {/* <button className="p-2 hover:text-[#FF6600]">
                 <Search className="h-5 w-5" />
-              </button>
+              </button> */}
             </nav>
 
             {/* Mobile Menu Button */}

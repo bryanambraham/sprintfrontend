@@ -11,6 +11,7 @@ interface BlogPost {
   image: string
   writer: string
   content: string
+  summary: string
   created_at: string
 }
 
@@ -63,7 +64,7 @@ export function BlogGrid() {
             <Link href={"#"} className="block">
               <div className="relative aspect-[16/9]">
               <Image
-                src={"/ekspedisi.png"} // Menambahkan fallback '||'
+                src={post.image ? post.image : "/ekspedisi.png"} // Menambahkan fallback '||'
                 alt={post.title}
                 width={640}
                 height={480}
@@ -86,12 +87,9 @@ export function BlogGrid() {
                 })}
               </div>
               <div className="text-sm text-gray-600 mb-3">
-                {post.content}
+                {post.summary}
               </div>
-              <Link
-                href={"#"}
-                className="inline-block mt-4 text-[#FF6600] hover:text-[#ff751a] font-semibold transition-colors"
-              >
+              <Link href={`/Blog/${post.id}`} className="inline-block mt-4 text-[#FF6600] hover:text-[#ff751a] font-semibold transition-colors">
                 Read More →
               </Link>
             </div>

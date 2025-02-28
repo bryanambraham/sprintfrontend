@@ -80,7 +80,7 @@ export function WhyChooseHero({ className = "" }: WhyChooseHeroProps) {
 
             {/* WhatsApp Button */}
             <Link
-              href="https://wa.me/your-number-here"
+              href="https://wa.me/6285282656556?text=Hai%20SprintCargo,%20saya%20mau%20bertanya%20dong."
               className="inline-flex mt-10 items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">

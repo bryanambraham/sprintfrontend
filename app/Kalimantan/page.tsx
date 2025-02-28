@@ -196,7 +196,7 @@ const page = () => {
         description="Ekspedisi Cargo Jakarta Ke Balikpapan, Banjarmasin, Pontianak, Sampit, Pangkalan Bun, Tarakan"
         button={{
           text: "Hubungi CS Kami",
-          href: "/#",
+          href: "https://wa.me/6285282656556?text=Hai%20SprintCargo,%20saya%20mau%20bertanya%20dong.",
         }}
         imageUrl="/ekspedisi.png"
         imageAlt="Hero PIC"

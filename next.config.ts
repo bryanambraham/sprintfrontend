@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['via.placeholder.com', '127.0.0.1'], // Tambahkan domain Laravel jika ada
+  },
 };
 
 export default nextConfig;
