@@ -3,8 +3,19 @@ import React from 'react'
 import { DescriptionContent } from "@/components/content-desc"
 import { WhyChooseHero } from '@/components/hero2'
 import CargoSearch from '@/components/ship-search'
+import { DescriptionContentBot } from '@/components/content-desc-bot'
 
 const page = () => {
+
+  const descriptionItemsBot = [
+    {
+      content: [
+        "Ekspedisi Jakarta ke Kalimantan – Pasca berdirinya perusahaan tahun 2010 silam, Kalimantan merupakan pulau kedua yang menjadi tujuan pengiriman Cargonesia Express setelah Pulau Jawa. Jadi sebelum pengiriman merata ke seluruh pulau di Indonesia seperti Sumatera, Bali, Sulawesi, Maluku, Papua dan pulau lainnya, Cargonesia sudah terlebih dulu “menancapkan kukunya” di Pulau Kalimantan.",
+        "Untuk proses pengirimannya sendiri secara keseluruhan menggunakan jalur laut. Ini mencakup tujuan pengiriman diseluruh provinsi di Pulau Kalimantan yaitu: Kalimantan Timur, Kalimantan Selatan, Kalimantan Barat, Kalimantan Tengah dan Kalimantan Utara.",
+        "Pengiriman dilakukan dari Jakarta menuju port masing-masing pelabuhan yang ditunjuk. Jadi sebelum sampai di alamat penerima, barang kiriman harus melalui beberapa pos untuk proses sortir barang dan lain-lainnya termasuk termasuk perpindahan pengiriman via trucking.",
+      ],
+    }
+  ]
 
   const descriptionItems = [
     {
@@ -206,13 +217,22 @@ const page = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <DescriptionContent items={descriptionItems} className="prose prose-lg max-w-none" />
         </div>
-      </section>
-      
-      <section className='py-6'>
-      <div className="min-h-screen bg-gray-50 py-12">
+        <div className="py-8 mb-8">
         <CargoSearch />
       </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <DescriptionContentBot items={descriptionItemsBot} className="prose prose-lg max-w-none" />
+        </div>
+        <div className='flex justify-center mt-6'>
+          <button className="my-4 max-w-3xl flex justify-center items-center text-xl p-3 bg-red-600 rounded-md text-white transition duration-300 ease-in-out transform hover:bg-red-700 hover:scale-105 shadow-lg">  
+              <a href="/Calculator" className="w-full h-full flex items-center justify-center">Calculator Cargo</a>  
+          </button>  
+          </div>
       </section>
+      
+      {/* <section className='py-6 bg-white'>
+
+      </section> */}
 
       <WhyChooseHero />
 

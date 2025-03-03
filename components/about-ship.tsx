@@ -12,18 +12,35 @@ export function ShippingSolution() {
     setIsPlaying(true)
   }
 
+  const youtubeVideoId = "OnGbs4SRi1Y" // ID Video YouTube
+
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center relative">
           {/* Left side - Image and Video */}
-          <div className="relative">
-            {/* Video Player */}
-            <div className="rounded-lg overflow-hidden relative aspect-[4/3]">
+          <div className="relative w-full">
+            {/* Staff Image */}
+            <Image
+              src="/staff.jpg"
+              alt="Cargonesia Staff"
+              width={600}
+              height={400}
+              className="object-cover w-full h-full rounded-lg"
+            />
+
+            {/* Video Thumbnail / Player */}
+            <div className="absolute bottom-[-40px] left-10 w-[350px] sm:w-[400px] rounded-lg overflow-hidden shadow-lg">
               {!isPlaying ? (
-                <>
-                  <Image src="/placeholder.svg" alt="Cargonesia Staff" fill className="object-cover" />
-                  {/* Video Play Button */}
+                <div className="relative w-full h-full">
+                  <Image
+                    src={`https://img.youtube.com/vi/VKGQHTwB8p4/maxresdefault.jpg`}
+                    alt="YouTube Thumbnail"
+                    width={400}
+                    height={250}
+                    className="object-cover w-full h-full"
+                  />
+                  {/* Play Button */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <button
                       className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors"
@@ -32,12 +49,16 @@ export function ShippingSolution() {
                       <Play className="w-8 h-8 text-[#FF6600] ml-1" />
                     </button>
                   </div>
-                </>
+                </div>
               ) : (
-                <video className="w-full h-full object-cover" autoPlay controls>
-                  <source src="/your-video-file.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  className="w-full aspect-video rounded-lg"
+                  src={`https://www.youtube.com/embed/VKGQHTwB8p4?autoplay=1`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               )}
             </div>
           </div>
@@ -96,10 +117,10 @@ export function ShippingSolution() {
               </div>
             </div>
 
-            {/* Contact Button - Now centered */}
+            {/* Contact Button */}
             <div className="flex justify-center mt-12">
               <Link
-                href="https://wa.me/your-number-here"
+                href="https://wa.me/6285282656556"
                 className="bg-[#FF6600] text-white px-8 py-3 rounded-md font-semibold hover:bg-[#ff751a] transition-colors"
               >
                 HUBUNGI CS
@@ -111,4 +132,3 @@ export function ShippingSolution() {
     </section>
   )
 }
-

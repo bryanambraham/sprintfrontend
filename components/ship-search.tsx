@@ -134,7 +134,7 @@ const CargoSearch = () => {
         {cargoData.length > 0 ? (
           <div className="mt-6 bg-orange-500 rounded-lg shadow-md">
             <div className="bg-orange-700 text-white p-3 text-lg font-bold flex justify-between">
-              <span>Jakarta ➡️ {cargoData[0].tujuan.toUpperCase()}</span>
+              <span>JAKARTA ➡️ {cargoData[0].tujuan.toUpperCase()}</span>
             </div>
             <div className="bg-white p-4">
               <p className="font-semibold">Tarif: <span className="text-gray-700">{cargoData[0].tarif}</span></p>
