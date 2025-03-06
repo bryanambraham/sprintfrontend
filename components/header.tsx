@@ -20,9 +20,9 @@ export function SiteHeader() {
   const cekOngkirItems = [
     { title: "Ongkir Jakarta Kalimantan", href: "/Kalimantan" },
     { title: "Ongkir Jakarta Sumatera", href: "/Sumatera" },
-    { title: "Ongkir Jakarta Sulawesi", href: "/Sulawesi" },
-    { title: "Ongkir Jakarta Papua", href: "/Papua" },
-    { title: "Ongkir Jakarta Maluku", href: "/Maluku" },
+    // { title: "Ongkir Jakarta Sulawesi", href: "/Sulawesi" },
+    // { title: "Ongkir Jakarta Papua", href: "/Papua" },
+    // { title: "Ongkir Jakarta Maluku", href: "/Maluku" },
     { title: "Ongkir Jakarta Bali", href: "/Bali" },
     { title: "Ongkir Jakarta Jawa", href: "/Jawa" },
   ]
@@ -35,11 +35,13 @@ export function SiteHeader() {
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <span>(021) 270 922 88</span>
+              <a href="https://wa.me/6285282656556?text=Hai%20SprintCargo,%20saya%20mau%20bertanya%20dong.">+62 852-8265-6556</a>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
-              <span>marketing@cargonesia.com</span>
+              <a href="mailto:marketing@sprintcargo.id">
+                  marketing@sprintcargo.id
+                </a>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -52,9 +54,9 @@ export function SiteHeader() {
             <Link href="#" className="hover:text-gray-200 hide-on-mobile">
               <Rss className="h-4 w-4" />
             </Link>
-            <Link href="#" className="hover:text-gray-200 text-sm">
+            {/* <Link href="#" className="hover:text-gray-200 text-sm">
               Syarat & Ketentuan
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

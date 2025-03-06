@@ -12,82 +12,91 @@ const page = () => {
   const descriptionItemsBot = [
     {
       content: [
-        "Jasa Ekspedisi Cargo Jakarta Ke Sumatera – Sumatera merupakan pulau keenam terbesar di dunia yang ada di Indonesia, dimana pulau ini dikenal dengan nama lain pulau percha, andalas, atau suwarnadwipa yang berarti pulau emas dan kemudian pada prasasti padang roco tahun 1286 dipahatkan swarnabhumi yang bahasa sanskerta berarti “tanah emas” atau “tanah melayu” untuk menyebut pulau ini.",
-        "Pulau seluas 473.481 Km2 ini dihubungkan oleh 4 ruas jalan lintas yaitu lintas tenga, timur, barat dan pantai timur yang melintang dari barat laut hingga tenggara Sumatera. Pulau Sumatera sendiri adalah pulang yang sangat kaya dengan hasil buminya, hasil bumi utama yang dihasilkan oleh pulau utama adalah tembakau, kelapa sawit, minyak bumi, bauksit, timah, gas alam hingga batu bara.",
+        "Jasa Ekspedisi Cargo Jakarta ke Sumatera – Sprint Cargo melayani pengiriman barang dari Jakarta ke berbagai kota di Sumatera dengan layanan cepat, aman, dan harga kompetitif. Dengan berbagai pilihan transportasi darat dan laut, kami memastikan setiap pengiriman tiba tepat waktu dan dalam kondisi terbaik.",
+        "Jaringan logistik kami mencakup seluruh Sumatera, termasuk kota-kota besar seperti Medan, Palembang, Pekanbaru, Padang, dan Lampung. Kami menyediakan layanan ekspedisi reguler dan ekspres sesuai dengan kebutuhan bisnis maupun individu.",
       ],
     }
-  ]
+  ];
+  
 
   const descriptionItems = [
     {
       content: [
-        "Jasa Ekspedisi Cargo Jakarta Ke Sumatera – Sumatera merupakan pulau keenam terbesar di dunia yang ada di Indonesia, dimana pulau ini dikenal dengan nama lain pulau percha, andalas, atau suwarnadwipa yang berarti pulau emas dan kemudian pada prasasti padang roco tahun 1286 dipahatkan swarnabhumi yang bahasa sanskerta berarti “tanah emas” atau “tanah melayu” untuk menyebut pulau ini.",
-        "Pulau seluas 473.481 Km2 ini dihubungkan oleh 4 ruas jalan lintas yaitu lintas tenga, timur, barat dan pantai timur yang melintang dari barat laut hingga tenggara Sumatera. Pulau Sumatera sendiri adalah pulang yang sangat kaya dengan hasil buminya, hasil bumi utama yang dihasilkan oleh pulau utama adalah tembakau, kelapa sawit, minyak bumi, bauksit, timah, gas alam hingga batu bara.",
+        "Sprint Cargo adalah solusi ekspedisi terpercaya untuk pengiriman barang dari Jakarta ke Sumatera. Dengan sistem pengiriman yang efisien dan tarif kompetitif, kami siap membantu pengiriman barang dalam berbagai skala, mulai dari kebutuhan bisnis, industri, hingga pengiriman personal.",
+        "Kami melayani pengiriman ke seluruh Sumatera dengan berbagai metode transportasi, termasuk jalur darat menggunakan truk ekspedisi dan jalur laut dengan kapal Roro atau cargo.",
       ],
     },
     {
-      title: "Ekspedisi Jakarta Sumatera Murah ",
+      title: "Ekspedisi Jakarta-Sumatera dengan Tarif Terjangkau",
       content: [
-        "PT. Cargonesia Utama Trans atau dikenal Cargonesia Express merupakan perusahaan ekspedisi Jakarta yang melayani distribusi barang ke seluruh wilayah Indonesia salah satunya pulau Sumatera. Untuk jalur ekspedisi Jakarta ke Sumatera sendiri bisa ditempuh oleh berbagai armada baik itu Darat, Laut hingga Udara.",
-        "Untuk pengiriman cargo darat ke Sumatera, Cargonesia Express telah didukung oleh jaringan mitra trucking dan transportasi darat lainnya dengan berbagai armada pengiriman seperti Pickup, CDE, CDD, Fuso hingga Wingbox yang siap mendistribusikan pengiriman barang anda mulai dari barang pengiriman barang pindahan, kebutuhan usaha hingga project ke seluruh pelosok wilayah Sumatera.",
-        "Sedangkan untuk jalur ekspedisi muatan kapal laut (EMKL) ke Sumatera sendiri hanya support ke kota-kota yang mendukung pelabuhan seperti Medan, Palembang, Batam, Kepulauan Riau, dan sebagainya menggunakan armada kapal roro, kapal cargo, kapal cepat PELNI hingga kapal ferry.",
+        "Sprint Cargo menyediakan layanan ekspedisi dengan harga yang kompetitif ke seluruh Sumatera. Kami memiliki berbagai pilihan armada trucking, mulai dari Pickup, CDE, CDD, Fuso, hingga Wingbox untuk memastikan fleksibilitas pengiriman.",
+        "Untuk pengiriman via laut, kami melayani kota-kota yang memiliki pelabuhan utama seperti Medan, Palembang, dan Batam menggunakan kapal Roro, kapal cargo, serta kapal cepat PELNI.",
       ],
     },
     {
-      title: "Layanan Jasa Cargo Jakarta Ke Sumatera",
+      title: "Layanan Jasa Cargo Jakarta ke Sumatera",
       content: [
-        "Cargonesia Express memiliki beberapa layanan unggulan untuk membantu anda dalam mendistribusikan pengiriman barang maupun kendaraan ke wilayah Sumatera, berikut layanan unggulan jasa cargo Jakarta ke Sumatera : ",
-        <em className='italic'>Selengkapnya tentang
-        <a href="/Mobil" className='text-blue-600 font-bold'> Ekspedisi Jakarta Balikpapan.</a>
-      </em>
+        "Sprint Cargo menyediakan berbagai layanan ekspedisi untuk memenuhi kebutuhan pelanggan, termasuk:",
+        <em className='italic'>Selengkapnya tentang 
+          <a href="/Mobil" className='text-blue-600 font-bold'> Ekspedisi Jakarta Sumatera.</a>
+        </em>
       ],
       list: [
-        "Ekspedisi Muatan Kapal Laut via kapal cepat Pelni dan kapal cargo",
-        "Ekspedisi cargo darat trucking (CDE, CDD, Hingga FUSO)",
-        "Cargo pesawat cepat untuk barang dengan prioritas tinggi",
-        "Jasa kirim motor via Kapal Roro & Trucking",
-        "Jasa pengiriman mobil via Self Drive, Car Carrier, Car Towing, Kapal Roro",
-        "Jasa pengiriman alat berat",
+        "Ekspedisi cargo laut dengan kapal cepat PELNI dan kapal cargo.",
+        "Pengiriman cargo darat menggunakan armada trucking (CDE, CDD, Fuso, Wingbox).",
+        "Cargo udara untuk pengiriman prioritas dengan SLA cepat.",
+        "Jasa kirim motor via Kapal Roro & Trucking.",
+        "Jasa pengiriman mobil via Self Drive, Car Carrier, Car Towing, Kapal Roro.",
+        "Jasa pengiriman alat berat ke proyek dan lokasi industri.",
       ]
     },
     {
+      title: "Keunggulan Menggunakan Jasa Ekspedisi Sprint Cargo ke Sumatera",
       content: [
-        "Cargonesia Express memiliki beberapa layanan unggulan untuk membantu anda dalam mendistribusikan pengiriman barang maupun kendaraan ke wilayah Sumatera, berikut layanan unggulan jasa cargo Jakarta ke Sumatera : ",
-        "Lebih Mudah Kirim Barang Ke Sumatera Bersama Cargonesia",
-        "Selain memiliki berbagai layanan cargo ke Sumatera, Cargonesia Express juga terus berkembang untuk terus memenuhi bentuk kepuasan pelanggan dengan tagline Murah, Mudah Menyenangkan. Lalu apa saja keuntungan bagi anda saat kirim barang bersama Cargonesia?",
-        <ol className="list-decimal pl-5"> {/* Tambahkan class ini */}
-          <li><strong>Gratis Jemput Barang</strong><br />Anda tidak perlu repot antar barang ke gudang kami karena kami siap jemput barang anda dan lebih menariknya khusus anda yang berlokasi di Jakarta bisa menikmati layanan tersebut GRATIS.</li>
-          <li><strong>Gratis Asuransi Barang</strong><br />Lebih aman kirim barang dengan GRATIS Asuransi untuk nilai barang dibawah Rp. 50.000.000,-.</li>
-          <li><strong>Terpercaya</strong><br />Kami memiliki legalitas yang lengkap dan juga didukung oleh gudang pengiriman yang luas</li>
-          <li><strong>Ongkos Kirim Bersahabat</strong><br />Jangan takut dompet jebol, ongkir cargo jakarta ke sumatera kami murah.</li>
+        <ol className="list-decimal pl-5 space-y-2">
+          <li><strong>Pengiriman Tepat Waktu</strong> – Layanan ekspedisi yang cepat dan sesuai dengan estimasi waktu pengiriman.</li>
+          <li><strong>Tarif Kompetitif</strong> – Harga bersaing dengan berbagai pilihan layanan pengiriman.</li>
+          <li><strong>Gratis Jemput Barang</strong> – Layanan door-to-door di area Jakarta untuk memudahkan pelanggan.</li>
+          <li><strong>Asuransi Pengiriman</strong> – Menyediakan perlindungan untuk barang yang dikirim agar lebih aman.</li>
+          <li><strong>Jaringan Luas</strong> – Pengiriman ke seluruh kota dan kabupaten di Sumatera.</li>
         </ol>
+      ]
+    },
+    {
+      title: "Jenis Barang yang Sering Dikirim ke Sumatera",
+      content: [
+        <ol className="list-decimal pl-5 space-y-2">
+          <li><strong>Kendaraan</strong> – Motor, Mobil, dan Alat Berat.</li>
+          <li><strong>Material Konstruksi</strong> – Kaca, Semen, Besi, Cat.</li>
+          <li><strong>Bahan Kimia & Obat-obatan</strong></li>
+          <li><strong>Peralatan Laboratorium dan Alat Kesehatan (Alkes)</strong></li>
+          <li><strong>Peralatan Industri</strong> – Panel Listrik, Genset, Valve, Server.</li>
+          <li><strong>Konveksi & Tekstil</strong> – Kaos, Seragam, Kain.</li>
+          <li><strong>Peralatan Elektronik</strong> – Kulkas, TV, Komputer, Mesin Cuci.</li>
+          <li><strong>Furniture</strong> – Sofa, Meja, Kursi, Lemari.</li>
+        </ol>
+      ]
+    },
+    {
+      title: "Cara Menghitung Berat Volume Barang Kiriman",
+      content: [
+        "Menentukan berat atau volume barang penting untuk memperkirakan biaya pengiriman. Sprint Cargo menggunakan perhitungan volume untuk barang yang ringan tetapi berukuran besar, seperti lemari es atau mesin cuci.",
+        <p>Rumus perhitungan volume barang adalah:</p>,
+        <em>Panjang (cm) x Lebar (cm) x Tinggi (cm) / 4000 = Berat Volume (Kg)</em>,
+        <p>Jika barang memerlukan packing kayu, maka estimasi dimensi akan ditambah 8 cm di setiap sisinya untuk keamanan ekstra.</p>
       ],
     },
     {
-      title: "Barang yang sering dikirim",
+      title: "Estimasi Biaya Packing untuk Pengiriman",
       content: [
-        "Motor, Mobil, Material Konstruksi (Kaca, Semen, Besi, Cat), Bahan Kimia, Peralatan Laboratorium, Alkes (Alat Kesehatan), Obat obatan,  Kabel Haspel / Fiber Optik, Konveksi & Tekstile (T Shirt, Kaos, Baju seragam ), Barang kebutuhan Industri (Water Treatment, Tabung, UPS, Panel Listrik, Panel Surya / Solar Cell, Server, Oli, Genset, Valve, Barang Percetakan), Furniture, Peralatan Safety, Pipa Besi, Pupuk, Barang Promosi, Alat Elektronik Rumah Tangga (Kulkas, AC, TV, Komputer, Mesin Cuci), Mesin & Spare Part ( Alat Berat, Excavator, Forklift, Stone Crusher, Mesin Pabrik, Mesin Traktor, Alat Pertanian, Mesin Pompa, Seal Mechanical), Tower.",
+        "Untuk barang yang rentan terhadap kerusakan, Sprint Cargo menawarkan layanan packing kayu tambahan. Perhitungan estimasi biaya packing dilakukan dengan rumus:",
+        <p><strong>Volume x Rp. 2000</strong></p>,
+        "Biaya packing bersifat opsional dan dapat dinegosiasikan sesuai kebutuhan pelanggan."
       ],
     },
-    {
-      title: "Cara menghitung berat volume barang kiriman",
-      content: [
-        "Sebelum memutuskan mengirim barang tentu sangat penting bagi anda memperhitungkan budget pengiriman, maka dari itu hal penting yang harus anda ketahui adalah mengetahui berat atau volume pengiriman anda nantinya yang akan dikalikan dengan tarif pengiriman atau ongkos kirim.",
-        "Sebagian orang tentu hanya mengetahui bahwa berat yang diambil yaitu berat actual hasil alat timbangan akan tetapi untuk pengiriman cargo juga dihitung volume barangnya, hal tersebut dikarenakan ada beberapa jenis barang yang volumenya besar dan memakan tempat akan tetapi untuk beratnya sangatlah ringan seperti contoh yaitu lemari kulkas, mesin cuci, dan juga kasur.",
-        <p>Adapun perhitungan akan diambil nilai terbesar antara <strong>berat actual (Kg) </strong>dan <strong>volume (Kgv)</strong>, untuk rumus perhitungan volume sendiri yaitu :</p>,
-        <em>Panjang (cm) x Lebar (cm) x Tinggi (cm) / 4000 = ….Kgv</em>,
-        <p>Perhitungan berikut merupakan perhitungan final, jika misalnya barang anda memerlukan packing estimasi dimensi tentunya akan ditambahkan 8cm tiap sisinya sesuai dengan ukuran kayu yang digunakan untuk packing.</p>
-      ],
-    },
-    {
-      title: "Perhitungan berikut merupakan perhitungan final, jika misalnya barang anda memerlukan packing estimasi dimensi tentunya akan ditambahkan 8cm tiap sisinya sesuai dengan ukuran kayu yang digunakan untuk packing.",
-      content: [
-        "Selain mengetahui estimasi berat dan volume, penting juga bagi anda yang memiliki barang riskan untuk mengetahui estimasi biaya packing pengiriman.",
-        <p>Perhitungan estimasi biaya packing bisa didapatkan dari rumus <strong>Est. Volume x Rp. 2000.</strong> Tetapi untuk biaya packing sifatnya opsional dan negotiable jadi jika anda memiliki barang yang besar anda tidak perlu khawatir untuk negosiasi packing kepada kami.</p>,
-        " Tetapi untuk biaya packing sifatnya opsional dan negotiable jadi jika anda memiliki barang yang besar anda tidak perlu khawatir untuk negosiasi packing kepada kami."
-      ],
-    },
-  ]
+  ];
+  
+  
 
   return (
     <div className='min-h-screen bg-white'>

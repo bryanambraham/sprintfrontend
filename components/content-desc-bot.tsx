@@ -21,11 +21,13 @@ export function DescriptionContentBot({ items, className = "" }: DescriptionCont
         <div key={index} className="space-y-3">
           {item.title && <h4 className="text-lg md:text-xl font-semibold text-gray-900">{item.title}</h4>}
           {item.content &&
-            item.content.map((paragraph, pIndex) => (
-              <p key={pIndex} className="text-gray-700 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
+            item.content.map((paragraph, pIndex) => 
+              typeof paragraph === "string" ? (
+                <p key={pIndex} className="text-gray-700 leading-relaxed">{paragraph}</p>
+              ) : (
+                <div key={pIndex}>{paragraph}</div>
+              )
+            )}
           {item.list && item.list.length > 0 && (
             <ul className="list-disc pl-5 space-y-2">
               {item.list.map((listItem, lIndex) => (
@@ -51,4 +53,3 @@ export function DescriptionContentBot({ items, className = "" }: DescriptionCont
     </div>
   )
 }
-
