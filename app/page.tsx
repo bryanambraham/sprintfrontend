@@ -1,18 +1,21 @@
+import { AboutSection } from "@/components/about-home"
+import { OfficeLocations } from "@/components/cabang"
 import { HeroSection } from "@/components/hero"
+import { ServicesGrid } from "@/components/services-card"
 import { Check } from "lucide-react"
 
 export default function Home() {
   return (
     <div>
       <HeroSection
-        title="JASA EKSPEDISI PENGIRIMAN KARGO JAKARTA KE SELURUH INDONESIA"
-        description="Perusahaan Ekspedisi Di Jakarta Yang Mendukung Pengiriman Barang Antar Pulau Ke Kalimantan, Sumatera, Sulawesi, Nusa Tenggara, Maluku & Papua."
-        subDescription="Gratis Jemput Area DKI Jakarta & Barang Dijamin Aman!"
+        title="Layanan Pengiriman Barang dari Jakarta ke Seluruh Indonesia dengan SprintCargo"
+        description="SprintCargo menyediakan layanan pengiriman barang antar pulau dengan jangkauan ke Kalimantan, Sumatera, Sulawesi, Nusa Tenggara, Maluku, dan Papua."
+        subDescription="Jemput barang gratis di area DKI Jakarta dengan jaminan keamanan pengiriman!"
         features={[
-          { text: "Kirim Barang Lebih Murah" },
-          { text: "Kirim Barang Lebih Mudah" },
-          { text: "Kirim Barang Lebih Menyenangkan" },
-        ]}
+          { text: "Pengiriman Barang Hemat Biaya" },
+          { text: "Proses Pengiriman Tanpa Ribet" },
+          { text: "Kirim Barang dengan Layanan Terbaik" },
+        ]}        
         button={{
           text: "CEK ONGKIR",
           href: "/cek-ongkir",
@@ -21,9 +24,13 @@ export default function Home() {
           { imageUrl: "/placeholder.svg", alt: "ISO 9001:2015" },
           { imageUrl: "/placeholder.svg", alt: "TUV Certification" },
         ]}
-        imageUrl="/placeholder.svg"
+        imageUrl="/staff.jpg"
         imageAlt="Cargo Staff"
       />
+
+    <AboutSection />
+    <ServicesGrid />
+    <OfficeLocations />
     </div>
   )
 }

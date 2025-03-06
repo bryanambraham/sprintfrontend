@@ -63,12 +63,12 @@ export function BlogGrid() {
           <article key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden">
             <Link href={"#"} className="block">
               <div className="relative aspect-[16/9]">
-              <Image
-                src={post.image ? post.image : "/ekspedisi.png"} // Menambahkan fallback '||'
-                alt={post.title}
-                width={640}
-                height={480}
-                className="object-cover"
+                <Image
+                  src={post.image ? post.image : "/ekspedisi.png"} // Menggunakan Base64 atau gambar fallback
+                  alt={post.title}
+                  width={640}
+                  height={480}
+                  className="object-cover"
                 />
               </div>
             </Link>
@@ -99,4 +99,3 @@ export function BlogGrid() {
     </div>
   )
 }
-

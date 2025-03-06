@@ -83,9 +83,9 @@ export function SiteFooter() {
             </h3>
             <ul className="space-y-2">
               <li className="text-sm text-gray-600 hover:text-[#DE1F26]"><a href="/Kalimantan">Kalimantan</a></li>
-              <li className="text-sm text-gray-600  hover:text-[#DE1F26]"><a href="/Sumatera"></a>Sumatera</li>
-              <li className="text-sm text-gray-600  hover:text-[#DE1F26]"><a href="/Bali"></a>Bali</li>
-              <li className="text-sm text-gray-600  hover:text-[#DE1F26]"><a href="/Jawa"></a>Jawa</li>
+              <li className="text-sm text-gray-600  hover:text-[#DE1F26]"><a href="/Sumatera">Sumatera</a></li>
+              <li className="text-sm text-gray-600  hover:text-[#DE1F26]"><a href="/Bali">Bali</a></li>
+              <li className="text-sm text-gray-600  hover:text-[#DE1F26]"><a href="/Jawa">Jawa</a></li>
               {/* <li className="text-sm text-gray-600">Maluku & Papua</li> */}
             </ul>
           </div>
