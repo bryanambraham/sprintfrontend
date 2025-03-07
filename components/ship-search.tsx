@@ -78,7 +78,7 @@ const CargoSearch = () => {
   };
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center" id="cargo-search">
       <div className="max-w-3xl w-full bg-white rounded-lg shadow-md px-4">
         {/* Header */}
         <div className="bg-blue-900 text-white text-center py-4 rounded-t-lg">
