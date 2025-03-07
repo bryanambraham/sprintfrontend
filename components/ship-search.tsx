@@ -7,6 +7,9 @@ interface Cargo {
   tujuan: string;
   tarif: string;
   estimasi: string;
+  cde?: number;
+  cdd?: number;
+  cdd_long?: number
   min_charge?: string;
   keterangan?: string;
 }
@@ -87,7 +90,7 @@ const CargoSearch = () => {
 
         {/* Tabs Pilihan Transportasi */}
         <div className="flex justify-center bg-orange-500 py-3 rounded-b-lg">
-          {["darat", "laut", "udara", "mobil"].map((t) => (
+          {["darat", "laut", "udara", "mobil", "ftl", "cargo", "reguler"].map((t) => (
             <button
               key={t}
               className={`px-6 py-2 mx-2 text-white font-semibold ${
@@ -95,7 +98,7 @@ const CargoSearch = () => {
               }`}
               onClick={() => handleTypeChange(t)}
             >
-              {t === "darat" ? "🚛" : t === "laut" ? "⛴️" : t === "udara" ? "✈️" : "🚗"}{" "}
+              {t === "darat" ? "🚛" : t === "laut" ? "⛴️" : t === "udara" ? "✈️" : t === "ftl" ? "✈️" : t === "cargo" ? "✈️" : t === "reguler" ? "✈️" : "🚗"}{" "}
               {t.toUpperCase()}
             </button>
           ))}
@@ -137,9 +140,12 @@ const CargoSearch = () => {
               <span>JAKARTA ➡️ {cargoData[0].tujuan.toUpperCase()}</span>
             </div>
             <div className="bg-white p-4">
-              <p className="font-semibold">Tarif: <span className="text-gray-700">{cargoData[0].tarif}</span></p>
-              <p className="font-semibold">Minimum Charge: <span className="text-gray-700">{cargoData[0].min_charge || "Tidak ada"}</span></p>
-              <p className="font-semibold">Estimasi: <span className="text-gray-700">{cargoData[0].estimasi}</span></p>
+              <p className="font-semibold">Minimum Charge: <span className="text-gray-700">{cargoData[0].min_charge || "N/A"}</span></p>
+              <p className="font-semibold">Estimasi: <span className="text-gray-700">{cargoData[0].estimasi} </span>Hari</p>
+              <p className="font-semibold">Tarif: <span className="text-gray-700">{cargoData[0].tarif || "N/A"} </span></p>
+              <p className="font-semibold">CDE: <span className="text-gray-700">{cargoData[0].cde || " N/A"}</span></p>
+              <p className="font-semibold">CDD: <span className="text-gray-700">{cargoData[0].cdd || " N/A"}</span></p>
+              <p className="font-semibold">CDD Long: <span className="text-gray-700">{cargoData[0].cdd_long || "N/A"}</span></p>
               {/* <p className="text-red-700 text-xs text-center">Keterangan: N/A berarti Tidak ada!</p> */}
             </div>
 
