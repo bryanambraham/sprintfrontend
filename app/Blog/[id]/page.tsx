@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 
 interface BlogPost {
   id: number;
@@ -47,7 +48,13 @@ const BlogDetail = () => {
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold">{post.title}</h1>
       <p className="text-gray-500">by {post.writer} | {new Date(post.created_at).toLocaleDateString("en-US")}</p>
-      <img src={post.image || "/default-image.jpg"} alt={post.title} className="w-full h-auto mt-4 rounded-lg" />
+      <Image 
+        src={post.image || "/default-image.jpg"} 
+        alt={post.title} 
+        width={500}  // Tentukan lebar gambar
+        height={300} // Tentukan tinggi gambar
+        className="w-full h-auto mt-4 rounded-lg" 
+      />
       <p className="mt-6">{post.content}</p>
     </div>
   );
